@@ -49,7 +49,7 @@
                 
 
 <div class="header-enquiry">
-<a class="enquiry-btn" href="https://krishikesari.com/contact-us/">Enquire Now</a>
+<a class="enquiry-btn" href="https://krishikesari.com/">Enquire Now</a>
 </div>
 </div>    
             </div>
@@ -60,109 +60,8 @@
         });
     </script>
 </div><main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
-<div class="page messages"><div data-placeholder="messages"></div>
-<div data-bind="scope: 'messages'">
-    <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
-    <div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
-        <div data-bind="attr: {
-            class: 'message-' + message.type + ' ' + message.type + ' message',
-            'data-ui-id': 'message-' + message.type
-        }">
-            <div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div>
-        </div>
-    </div>
-    <!-- /ko -->
+</div><div class="columns"><div class="column main">
 
-    <!-- ko if: messages().messages && messages().messages.length > 0 -->
-    <div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
-        <div data-bind="attr: {
-            class: 'message-' + message.type + ' ' + message.type + ' message',
-            'data-ui-id': 'message-' + message.type
-        }">
-            <div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div>
-        </div>
-    </div>
-    <!-- /ko -->
-</div>
-<script type="text/x-magento-init">
-    {
-        "*": {
-            "Magento_Ui/js/core/app": {
-                "components": {
-                        "messages": {
-                            "component": "Magento_Theme/js/view/messages"
-                        }
-                    }
-                }
-            }
-    }
-</script>
-</div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="LJk8bBK50wkARl5a" /><div id="authenticationPopup" data-bind="scope:'authenticationPopup', style: {display: 'none'}">
-        <script>window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/krishikesari.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/krishikesari.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/krishikesari.com\/"}</script>    <!-- ko template: getTemplate() --><!-- /ko -->
-    <script type="text/x-magento-init">
-        {
-            "#authenticationPopup": {
-                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"},"amazon-button":{"component":"Amazon_Login\/js\/view\/login-button-wrapper","sortOrder":"0","displayArea":"additional-login-form-fields","config":{"tooltip":"Securely login to our website using your existing Amazon details.","componentDisabled":true}}}}}}            },
-            "*": {
-                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Fkrishikesari.com\u002Fpub\u002Fstatic\u002Fversion1670829432\u002Ffrontend\u002Fkrishikesari\u002FDefault\u002Fen_US\u002Fimages\u002Floader\u002D1.gif"
-            }
-        }
-    </script>
-</div>
-<script type="text/x-magento-init">
-    {
-        "*": {
-            "Magento_Customer/js/section-config": {
-                "sections": {"stores\/store\/switch":["*"],"stores\/store\/switchrequest":["*"],"directory\/currency\/switch":["*"],"*":["messages"],"customer\/account\/logout":["*","recently_viewed_product","recently_compared_product","persistent"],"customer\/account\/loginpost":["*"],"customer\/account\/createpost":["*"],"customer\/account\/editpost":["*"],"customer\/ajax\/login":["checkout-data","cart","captcha"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart","directory-data"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","last-ordered-items","instant-purchase"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"multishipping\/checkout\/overviewpost":["cart"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"paypal\/express\/onauthorization":["cart","checkout-data"],"persistent\/index\/unsetcookie":["persistent"],"review\/product\/post":["review"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"braintree\/googlepay\/placeorder":["cart","checkout-data"]},
-                "clientSideSections": ["checkout-data","cart-data","chatData"],
-                "baseUrls": ["https:\/\/krishikesari.com\/"],
-                "sectionNames": ["messages","customer","compare-products","last-ordered-items","cart","directory-data","captcha","instant-purchase","loggedAsCustomer","persistent","review","wishlist","chatData","recently_viewed_product","recently_compared_product","product_data_storage","paypal-billing-agreement"]            }
-        }
-    }
-</script>
-<script type="text/x-magento-init">
-    {
-        "*": {
-            "Magento_Customer/js/customer-data": {
-                "sectionLoadUrl": "https\u003A\u002F\u002Fkrishikesari.com\u002Fcustomer\u002Fsection\u002Fload\u002F",
-                "expirableSectionLifetime": 60,
-                "expirableSectionNames": ["cart","persistent"],
-                "cookieLifeTime": "3600",
-                "updateSessionUrl": "https\u003A\u002F\u002Fkrishikesari.com\u002Fcustomer\u002Faccount\u002FupdateSession\u002F"
-            }
-        }
-    }
-</script>
-<script type="text/x-magento-init">
-    {
-        "*": {
-            "Magento_Customer/js/invalidation-processor": {
-                "invalidationRules": {
-                    "website-rule": {
-                        "Magento_Customer/js/invalidation-rules/website-rule": {
-                            "scopeConfig": {
-                                "websiteId": "1"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-</script>
-<script type="text/x-magento-init">
-    {
-        "body": {
-            "pageCache": {"url":"https:\/\/krishikesari.com\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_home","blog_css"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/"},"versionCookieName":"private_content_version"}        }
-    }
-</script>
-
-
-    <script>
-        require(['jquery', 'Magefan_Blog/js/lib/mfblogunveil', 'domReady!'], function($){
-            $('.mfblogunveil').mfblogunveil();
-        });
-    </script>
 
 <div class="home-content"><div class="widget block block-static-block">
     <div class="product-highlight">
@@ -177,7 +76,7 @@
 <li>Cash crops such as wheat, rice, sugarcane and much more</li>
 <li>Poly house and greenhouse</li>
 </ul>
-Whether you're a professional farmer or just enjoy growing your vegetables at home, our <a href="https://krishikesari.com/products/vermicompost-fertilizer.html"><span style="text-decoration: underline;">premium quality vermicompost</span></a> will boost plant growth naturally while maintaining soil quality in the long run. Not only does this help produce better crops, but it also reduces conflict between humans and nature because it uses zero chemicals that are costly both financially and environmentally!
+Whether you're a professional farmer or just enjoy growing your vegetables at home, our premium quality vermicompost will boost plant growth naturally while maintaining soil quality in the long run. Not only does this help produce better crops, but it also reduces conflict between humans and nature because it uses zero chemicals that are costly both financially and environmentally!
 <p>&nbsp;</p>
 </div>
 </div></div>
@@ -761,11 +660,7 @@ If you're looking for an environmentally friendly and cost-effective way to impr
             }
         }
 </script>
-<div class="whatapp-float"> <a href="https://wa.me/+919813563838?text=" target="_blank"><em class="fa fa-whatsapp"></em> &nbsp; </a> </div>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3HCZQC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<div class="whatapp-float"> <a href="https://wa.me/+919910434949?text=" target="_blank"><em class="fa fa-whatsapp"></em> &nbsp; </a> </div>
 <div class="callnow">
 <a href="tel:+9"><i class="fa fa-phone" aria-hidden="true"></i> tel</a>
 <a href="" class="enquiry-btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enquire Now</a>
